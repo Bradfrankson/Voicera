@@ -21,8 +21,10 @@ const ThankYouPage = () => {
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1082535100636679');
             fbq('track', 'PageView');
-            fbq('track', 'Lead');
           `}
+        </script>
+        <script>
+          {`fbq('track', 'Lead');`}
         </script>
         <noscript>
           {`<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1082535100636679&ev=PageView&noscript=1"/>`}
