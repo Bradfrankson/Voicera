@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 
 const PrivacyPolicy = () => {
   return (
@@ -102,6 +103,9 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer with Legal Links */}
+      <Footer />
     </div>
   );
 };

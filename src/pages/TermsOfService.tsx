@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 
 const TermsOfService = () => {
   return (
@@ -129,6 +130,9 @@ const TermsOfService = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer with Legal Links */}
+      <Footer />
     </div>
   );
 };

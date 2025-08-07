@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 
 const CookiePolicy = () => {
   return (
@@ -134,6 +135,9 @@ const CookiePolicy = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer with Legal Links */}
+      <Footer />
     </div>
   );
 };

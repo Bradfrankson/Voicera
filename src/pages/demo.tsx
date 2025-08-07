@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 
 const DemoPage = () => {
   React.useEffect(() => {
@@ -201,14 +202,8 @@ const DemoPage = () => {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-800 border-t border-gray-700 py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-gray-400 text-sm">
-            © 2024 Voicera AI. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      {/* Footer with Legal Links */}
+      <Footer />
 
       {/* Meta Pixel Tracking Comment */}
       {/* 
