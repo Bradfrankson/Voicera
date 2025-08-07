@@ -10,8 +10,8 @@ const ThankYouPage = () => {
       {/* Meta Pixel Code in Head */}
       <Helmet>
         {/* Meta Pixel Code */}
-        <script>
-          {`
+        <script dangerouslySetInnerHTML={{
+          __html: `
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -23,8 +23,8 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1082535100636679');
 fbq('track', 'PageView');
 fbq('track', 'Lead');
-          `}
-        </script>
+          `
+        }} />
         {/* End Meta Pixel Code */}
       </Helmet>
 
