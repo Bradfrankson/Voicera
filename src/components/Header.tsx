@@ -57,7 +57,7 @@ const Header = () => {
           {/* CTA Button - External Form Link */}
           <div className="hidden md:block">
             <a
-              href="https://api.leadconnectorhq.com/widget/booking/3ZLEn4Fk2exmjVVfEw9L"
+              href="https://api.leadconnectorhq.com/widget/bookings/voicera-ai"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-400 text-black font-bold py-2 px-6 rounded-full text-sm transition-all duration-300 transform hover:scale-105 tracking-wide"
@@ -87,7 +87,7 @@ const Header = () => {
 
               {/* Mobile Demo Button */}
               <a
-                href="https://api.leadconnectorhq.com/widget/booking/3ZLEn4Fk2exmjVVfEw9L"
+                href="https://api.leadconnectorhq.com/widget/bookings/voicera-ai"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}

@@ -42,15 +42,6 @@ const DemoPage = () => {
       if (existingScript) existingScript.remove();
     };
   }, []);
-  const scrollToCalendar = () => {
-    const calendarElement = document.getElementById('booking-calendar');
-    if (calendarElement) {
-      calendarElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  };
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
@@ -87,12 +78,14 @@ const DemoPage = () => {
             </div>
 
             {/* Sticky CTA Button */}
-            <button
-              onClick={scrollToCalendar}
+            <a
+              href="https://api.leadconnectorhq.com/widget/bookings/voicera-ai"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-400 text-black font-bold py-2 px-6 rounded-full text-sm transition-all duration-300 transform hover:scale-105 tracking-wide"
             >
               BOOK DEMO NOW
-            </button>
+            </a>
           </div>
         </div>
       </header>
@@ -139,10 +132,10 @@ const DemoPage = () => {
             </p>
             
             {/* Video Section */}
-            <div className="mb-16">
+            <div className="mb-8">
               <div className="relative rounded-xl overflow-hidden shadow-2xl border border-gray-700" style={{ maxWidth: '400px', margin: '0 auto' }}>
                 <div style={{ position: 'relative', paddingBottom: '177.78%', height: 0, overflow: 'hidden' }}>
-                  <video 
+                  <video
                     controls
                     preload="metadata"
                     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
@@ -154,6 +147,21 @@ const DemoPage = () => {
                   </video>
                 </div>
               </div>
+            </div>
+
+            {/* CTA Button directly under video */}
+            <div className="text-center mb-16">
+              <a
+                href="https://api.leadconnectorhq.com/widget/bookings/voicera-ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 hover:bg-green-400 text-black font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-green-500/25 inline-flex items-center space-x-3"
+              >
+                <span>🚀 BOOK YOUR DEMO NOW</span>
+              </a>
+              <p className="text-gray-400 mt-3 text-sm">
+                See how Voicera AI can transform your business in just 15 minutes
+              </p>
             </div>
 
             {/* Marketing Message Section */}
@@ -174,19 +182,17 @@ const DemoPage = () => {
             {/* Booking Calendar Section */}
             <div id="booking-calendar" className="mt-16">
               <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-200" style={{ maxWidth: '800px', margin: '0 auto' }}>
-                <iframe 
-                  src="https://api.leadconnectorhq.com/widget/booking/3ZLEn4Fk2exmjVVfEw9L" 
-                  style={{ 
-                    width: '100%', 
-                    height: '750px', 
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/bookings/voicera-ai"
+                  style={{
+                    width: '100%',
+                    height: '750px',
                     border: 'none',
                     display: 'block'
-                  }} 
-                  scrolling="auto" 
-                  id="3ZLEn4Fk2exmjVVfEw9L_booking"
+                  }}
+                  id="voicera-ai-booking"
                   title="Book Demo Calendar"
                   allowFullScreen
-                  frameBorder="0"
                 >
                 </iframe>
               </div>

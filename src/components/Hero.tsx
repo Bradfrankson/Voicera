@@ -228,7 +228,7 @@ const Hero = () => {
 
           {/* Secondary CTA */}
           <a
-            href="https://api.leadconnectorhq.com/widget/booking/3ZLEn4Fk2exmjVVfEw9L"
+            href="https://api.leadconnectorhq.com/widget/bookings/voicera-ai"
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-green-500 text-green-400 px-6 py-3 rounded-full hover:bg-green-500 hover:text-black transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2 text-base font-semibold mx-auto"

@@ -201,7 +201,7 @@ const WhatsIncluded = () => {
         <div className="text-center">
           <p className="text-gray-400 mb-6">Ready to get everything included?</p>
           <a
-            href="https://api.leadconnectorhq.com/widget/booking/3ZLEn4Fk2exmjVVfEw9L"
+            href="https://api.leadconnectorhq.com/widget/bookings/voicera-ai"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 hover:bg-green-400 text-black px-8 py-3 rounded-full font-bold transition-all duration-300 transform hover:scale-105 inline-block"

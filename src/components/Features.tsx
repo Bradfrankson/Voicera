@@ -82,7 +82,7 @@ const Features = () => {
             your AI voice agent is handling prospects professionally 24/7.
           </p>
           <a
-            href="https://api.leadconnectorhq.com/widget/booking/3ZLEn4Fk2exmjVVfEw9L"
+            href="https://api.leadconnectorhq.com/widget/bookings/voicera-ai"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 text-black px-6 py-2 rounded-full hover:bg-green-400 transition-all duration-300 transform hover:scale-105 font-semibold inline-block"
