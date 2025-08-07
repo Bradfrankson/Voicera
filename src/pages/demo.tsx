@@ -173,59 +173,23 @@ const DemoPage = () => {
 
             {/* Booking Calendar Section */}
             <div id="booking-calendar" className="mt-16">
-              <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-200" style={{ maxWidth: '600px', margin: '0 auto' }}>
+              <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-200" style={{ maxWidth: '800px', margin: '0 auto' }}>
                 <iframe 
                   src="https://api.leadconnectorhq.com/widget/booking/3ZLEn4Fk2exmjVVfEw9L" 
                   style={{ 
                     width: '100%', 
-                    height: '600px', 
+                    height: '750px', 
                     border: 'none',
                     display: 'block'
                   }} 
                   scrolling="auto" 
-                  id="3ZLEn4Fk2exmjVVfEw9L_1753804734013"
+                  id="3ZLEn4Fk2exmjVVfEw9L_booking"
                   title="Book Demo Calendar"
                   allowFullScreen
                   frameBorder="0"
                 >
                 </iframe>
               </div>
-              <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
-            </div>
-
-            {/* Alternative Contact Form */}
-            <div className="mt-8 max-w-md mx-auto">
-              <div className="text-center mb-6">
-                <div className="text-gray-300 text-xl font-bold mb-2">
-                  💚 Want Us to Reach You Instead? 💚
-                </div>
-                <div className="text-gray-400 text-sm">
-                  Drop your info below and we'll contact you within 24 hours! ✨
-                </div>
-              </div>
-              <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-green-500/30">
-                <div style={{width: '100%'}}>
-                  <iframe
-                    src="https://api.leadconnectorhq.com/widget/form/GYxrIQCfXXPx0V0cFpwF"
-                    style={{width: '100%', minHeight: '600px', height: '752px', border: 'none', borderRadius: '8px', background: 'transparent'}}
-                    id="inline-GYxrIQCfXXPx0V0cFpwF"
-                    data-layout="{'id':'INLINE'}"
-                    data-trigger-type="alwaysShow"
-                    data-trigger-value=""
-                    data-activation-type="alwaysActivated"
-                    data-activation-value=""
-                    data-deactivation-type="neverDeactivate"
-                    data-deactivation-value=""
-                    data-form-name="Form 1"
-                    data-height="752"
-                    data-layout-iframe-id="inline-GYxrIQCfXXPx0V0cFpwF"
-                    data-form-id="GYxrIQCfXXPx0V0cFpwF"
-                    title="Form 1"
-                    allowTransparency={true}
-                  ></iframe>
-                </div>
-              </div>
-              <script src="https://link.msgsndr.com/js/form_embed.js"></script>
             </div>
           </div>
         </section>
