@@ -38,5 +38,33 @@
     </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Vapi Widget -->
+    <vapi-widget 
+      assistant-id="df3a5a66-8e43-45c7-b97d-028b6b43c5cc" 
+      public-key="ecd55d27-28b4-4fa8-a9ce-4fbc7d742f59"
+      mode="voice"
+      theme="dark"
+      base-bg-color="#111827"
+      accent-color="#10B981"
+      cta-button-color="#10B981"
+      cta-button-text-color="#000000"
+      border-radius="large"
+      size="full"
+      position="bottom-right"
+      title="TALK WITH VOICERA AI"
+      start-button-text="Start"
+      end-button-text="End Call"
+      chat-first-message="Hey, I can help qualify leads and book appointments 24/7. How can I assist you today?"
+      voice-show-transcript="true"
+      consent-required="true"
+      consent-title="Terms and conditions"
+      consent-content="By clicking 'Agree,' and each time I interact with this AI agent, I consent to the recording, storage, and sharing of my communications with third-party service providers, and as otherwise described in our Terms of Service."
+    ></vapi-widget>
+    <script
+      src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
+      async
+      type="text/javascript"
+    ></script>
   </body>
 </html>
