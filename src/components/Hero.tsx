@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { Mic, Calendar } from 'lucide-react';
 
 const VoiceWaveform = () => {
@@ -145,31 +145,15 @@ const InteractiveConversation = () => {
 };
 
 const Hero = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
   const handleTalkToVoicera = () => {
-    // Use the Voicera AI widget from index.html instead of creating a new instance
-    // This prevents conflicts and uses the properly configured widget
+    // Use the Voicera AI widget from index.html
     const vapiWidget = document.querySelector('vapi-widget');
     if (vapiWidget) {
-      // Trigger the widget to open/start
       const event = new CustomEvent('vapi-widget-open');
       vapiWidget.dispatchEvent(event);
     } else {
-      console.warn('Voicera AI widget not found. Please ensure the widget is properly loaded.');
+      console.warn('Voicera AI widget not found');
     }
-  };
-
-  const getButtonText = () => {
-    if (isHovered) return 'GIVE IT A TRY';
-    return 'TALK TO VOICERA AI';
-  };
-
-  const getButtonStyles = () => {
-    if (isHovered) {
-      return 'bg-white text-black border-2 border-white';
-    }
-    return 'bg-green-500 hover:bg-green-400 text-black border-2 border-green-500';
   };
 
   return (
@@ -208,17 +192,14 @@ const Hero = () => {
           <div className="flex flex-col items-center space-y-2">
             <button
               onClick={handleTalkToVoicera}
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-              className={`demo-call-button group px-12 py-6 rounded-full text-xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-white/25 flex items-center justify-center space-x-4 mx-auto ${getButtonStyles()}`}
+              className="bg-green-500 text-black px-12 py-4 rounded-full text-xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl flex items-center justify-center space-x-4 mx-auto hover:bg-green-400"
             >
-              <Mic className="h-6 w-6 group-hover:animate-pulse" />
-              <span>{getButtonText()}</span>
+              <Mic className="h-6 w-6" />
+              <span>TALK TO VOICERA AI</span>
               <div className="flex space-x-1">
-                <div className="w-1 h-4 bg-black rounded-full animate-pulse"></div>
-                <div className="w-1 h-6 bg-black rounded-full animate-pulse" style={{animationDelay: '0.1s'}}></div>
-                <div className="w-1 h-4 bg-black rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
-                <div className="w-1 h-5 bg-black rounded-full animate-pulse" style={{animationDelay: '0.3s'}}></div>
+                <div className="w-1 h-4 bg-black rounded-full"></div>
+                <div className="w-1 h-6 bg-black rounded-full"></div>
+                <div className="w-1 h-4 bg-black rounded-full"></div>
               </div>
             </button>
             <p className="text-sm text-gray-400 font-body">
@@ -251,12 +232,14 @@ const Hero = () => {
 
 
 
-      <style jsx>{`
-        @keyframes waveformPulse {
-          0% { transform: scaleY(1); opacity: 0.8; }
-          100% { transform: scaleY(0.3); opacity: 0.4; }
-        }
-      `}</style>
+      <style>
+        {`
+          @keyframes waveformPulse {
+            0% { transform: scaleY(1); opacity: 0.8; }
+            100% { transform: scaleY(0.3); opacity: 0.4; }
+          }
+        `}
+      </style>
     </section>
   );
 };
