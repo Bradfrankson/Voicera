@@ -12,8 +12,8 @@ const DemoPage = () => {
 
     // Add Vapi widget element
     const widget = document.createElement('vapi-widget');
-    widget.setAttribute('public-key', '127ff63b-ae53-45d6-9b0d-35f2485ce6eb');
-    widget.setAttribute('assistant-id', '7dcfebd6-7d7d-4a91-9e31-aac733c04474');
+    widget.setAttribute('assistant-id', 'df3a5a66-8e43-45c7-b97d-028b6b43c5cc');
+    widget.setAttribute('public-key', 'ecd55d27-28b4-4fa8-a9ce-4fbc7d742f59');
     widget.setAttribute('mode', 'voice');
     widget.setAttribute('theme', 'light');
     widget.setAttribute('base-bg-color', '#ffffff');
