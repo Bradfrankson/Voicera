@@ -36,6 +36,13 @@
       src="https://www.facebook.com/tr?id=1082535100636679&ev=Lead&noscript=1"
       />
     </noscript>
+    <!-- Vapi Widget Script -->
+    <script
+      src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
+      async
+      type="text/javascript"
+    ></script>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     
@@ -60,11 +67,15 @@
       consent-required="true"
       consent-title="Terms and conditions"
       consent-content="By clicking 'Agree,' and each time I interact with this AI agent, I consent to the recording, storage, and sharing of my communications with third-party service providers, and as otherwise described in our Terms of Service."
-    ></vapi-widget>
-    <script
-      src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
-      async
-      type="text/javascript"
-    ></script>
+    >
+      <script>
+        window.addEventListener('load', function() {
+          const widget = document.querySelector('vapi-widget');
+          if (widget) {
+            widget.setAttribute('data-initialized', 'true');
+          }
+        });
+      </script>
+    </vapi-widget>
   </body>
 </html>
